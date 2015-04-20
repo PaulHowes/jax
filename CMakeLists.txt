@@ -46,6 +46,7 @@ endif(DOXYGEN_FOUND)
 #
 include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}/include
+  ${CMAKE_CURRENT_SOURCE_DIR}/external/any/include
   )
 
 #
@@ -88,6 +89,9 @@ add_test(test_json_parser_single_element_object test_json_parser_single_element_
 
 add_executable(test_json_parser_multi_element_object ${CMAKE_CURRENT_SOURCE_DIR}/test/test_json_parser_multi_element_object.cpp)
 add_test(test_json_parser_multi_element_object test_json_parser_multi_element_object)
+
+add_executable(test_stream_parser ${CMAKE_CURRENT_SOURCE_DIR}/test/test_stream_parser.cpp)
+add_test(test_stream_parser test_stream_parser)
 
 #add_executable(TEST ${CMAKE_CURRENT_SOURCE_DIR}/test/TEST.cpp)
 #add_test(TEST TEST)

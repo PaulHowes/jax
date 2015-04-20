@@ -5,6 +5,5 @@
 
 #pragma once
 
-#include <jax/json_parser.hpp>
-//#include <jax/stream_parser.hpp>
+#include <jax/stream_parser.hpp>
 //#include <jax/tree_parser.hpp>
